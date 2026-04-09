@@ -15,6 +15,7 @@ import java.util.UUID;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Transacao {
 
     @Id
@@ -29,7 +30,7 @@ public class Transacao {
     private BigDecimal valor;
 
     @Column
-    private String descicao;
+    private String descricao;
 
     @Column
     private LocalDateTime dataHora;
@@ -39,8 +40,8 @@ public class Transacao {
     private StatusTransacao statusTransacao;
 
     @Column
-    private UUID contaOrigemID;
+    private UUID contaOrigemId;
 
     @Column
-    private UUID contaDestinoID;
+    private UUID contaDestinoId;
 }
